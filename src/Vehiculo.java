@@ -6,8 +6,29 @@ public abstract class Vehiculo {
 	private String nombre;
 	
 	private Coordenada ubicacion;
+
+	private boolean activo = false;
 	
-	private boolean activo;
+	public Vehiculo(String nombre, Coordenada ubicacion) {
+		super();
+		this.nombre = nombre;
+		this.ubicacion = ubicacion;
+	}
 	
-	public abstract void Moverse();
+	public int getId() {
+		return id;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public Coordenada getUbicacion() {
+		return ubicacion;
+	}
+
+	public boolean isActivo() {
+		return activo;
+	}
+
 }

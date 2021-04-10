@@ -1,10 +1,15 @@
 
 public class Drone  extends Vehiculo {
 
-	@Override
-	public void Moverse() {
-		// TODO Auto-generated method stub
-		
+	public Drone(String nombre, Coordenada ubicacion) {
+		super(nombre, ubicacion);
+		// TODO Auto-generated constructor stub
+	}
+
+	public void Moverse(Coordenada nuevaUbicacion) {
+		if (!nuevaUbicacion.equals(this.getUbicacion())) {
+			//Procesar movimientos...			
+		}
 	}
 
 }
